@@ -30,6 +30,6 @@ Comando para inicializar um repositório: `git init`
 <p>Um texto qualquer.</p>
 ```
 
-[x] Feature 1
-[] Feature 2
-[] Feature 3
+- [x] Feature 1
+- [ ] Feature 2
+- [ ] Feature 3
