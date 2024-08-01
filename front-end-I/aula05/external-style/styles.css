@@ -1,0 +1,43 @@
+/* HEADER */
+p,
+h1 {
+  /* color: green;
+  font-size: 30px;
+  font-family: sans-serif;
+  background-color: pink; */
+}
+
+.title {
+  color: red;
+  font-size: 30px;
+  font-family: sans-serif;
+  background-color: pink;
+}
+
+.title {
+  color: purple;
+}
+
+#paragrafo {
+  color: tomato;
+}
+
+/* a:hover {
+  color: red;
+} */
+
+/* Sou um comentário CSS */
+
+/* RGB */
+rgb(180, 170, 255)
+
+/* HEXADECIMAL */
+#FFFFFF
+#FFF
+#000
+#F00
+#0F0
+#00F
+
+/* HSL */
+hsl(0, 100%, 100%)
