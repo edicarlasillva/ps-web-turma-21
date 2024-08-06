@@ -1,0 +1,11 @@
+div {
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+}
+
+section {
+  background: blue;
+  width: 300px;
+  height: 200px;
+}

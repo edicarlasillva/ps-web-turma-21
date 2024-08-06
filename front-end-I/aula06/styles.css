@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+section {
+  color: #fff;
+  background: #5b6dcd;
+  padding: 20px;
+  text-align: center;
+
+  width: 200px;
+  margin: 20px auto;
+}

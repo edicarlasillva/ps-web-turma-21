@@ -1,0 +1,26 @@
+/* .primeira {
+  opacity: 0.1;
+  background-color: purple;
+} */
+
+/* .segunda {
+  opacity: 0.5;
+  background-color: purple;
+} */
+
+.terceira {
+  opacity: 1;
+  background-color: purple;
+}
+
+.primeira {
+  background-color: rgba(76, 175, 80, 0.1);
+}
+
+.segunda {
+  background-color: rgba(76, 175, 80, 0.5);
+}
+
+.terceira {
+  background-color: rgba(76, 175, 80, 1);
+}

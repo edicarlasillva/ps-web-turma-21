@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.menu {
+  height: 100px;
+  background-color: green;
+}
+
+.content {
+  width: 700px;
+  height: 500px;
+  background: purple;
+  float: left;
+}
+
+.sidebar {
+  width: 200px;
+  height: 500px;
+  background: pink;
+  float: left;
+}
+
+.footer {
+  height: 200px;
+  background-color: gray;
+  clear: both;
+}
+
+.column {
+  float: left;
+  margin: 0 15px;
+  width: calc(33.33% - 30px);
+  height: 160px;
+  background-color: #fefefe;
+}

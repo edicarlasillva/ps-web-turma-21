@@ -1,0 +1,42 @@
+.static {
+  position: static;
+  border: 3px solid green;
+}
+
+.relative {
+  position: relative;
+  border: 3px solid green;
+  left: 30px;
+  /* top: 20px; */
+}
+
+.fixed {
+  position: fixed;
+  border: 3px solid green;
+  width: 300px;
+  bottom: 20px;
+  right: 20px;
+}
+
+.absolute {
+  position: absolute;
+  border: 3px solid green;
+  width: 200px;
+  right: 0;
+  top: 0;
+}
+
+.sticky {
+  position: sticky;
+  border: 3px solid green;
+  padding: 10px;
+  top: 0;
+}
+
+.relative2 {
+  top: 50px;
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid green;
+}

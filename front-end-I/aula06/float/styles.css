@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* div {
+  margin: 10px;
+  background: blueviolet;
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+
+.direita {
+  float: right;
+} */
+
+.sidebar {
+  background: blueviolet;
+  width: 30%;
+  height: 100vh;
+  float: left;
+}
+
+.content {
+  background: blue;
+  width: 70%;
+  height: 100vh;
+  float: left;
+}
+
+.container {
+  background: blue;
+  width: 70%;
+  height: 200px;
+  margin: 0 auto;
+}

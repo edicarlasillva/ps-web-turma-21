@@ -1,0 +1,32 @@
+p::first-letter {
+  color: blue;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+}
+
+li:before {
+  content: "";
+  display: inline-block;
+  /* background-image: url("https://sonobel.com.br/assets/img/check_verde.png"); */
+  background-color: purple;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  margin-right: 10px;
+  background-size: cover;
+}
+
+/* li:after {
+  content: "";
+  display: inline-block;
+  background-image: url("https://sonobel.com.br/assets/img/check_verde.png");
+  width: 10px;
+  height: 10px;
+  position: relative;
+  margin-left: 10px;
+  background-size: cover;
+} */

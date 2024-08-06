@@ -1,0 +1,15 @@
+div p {
+  border: 2px solid;
+}
+
+.filhos > p {
+  color: red;
+}
+
+h2 + p {
+  color: blue;
+}
+
+h2 ~ p {
+  color: purple;
+}
