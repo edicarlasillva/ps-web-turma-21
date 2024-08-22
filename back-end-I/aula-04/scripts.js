@@ -98,13 +98,60 @@
 //   contador++
 // }
 
-let numero = parseInt(prompt('Digite um número'))
+// let numero = parseInt(prompt('Digite um número'))
 
-let contador = 1
+// let contador = 1
 
-do {
-  let resultado = numero * contador
-  console.log(`${numero} x ${contador} = ${resultado}`)
+// do {
+//   let resultado = numero * contador
+//   document.write(`${numero} x ${contador} = ${resultado}<br>`)
 
-  contador++
-} while (contador <= 10)
+//   contador++
+// } while (contador <= 10)
+
+// let count = 0
+
+// for (;;) {
+//   console.log(count)
+//   count++
+
+//   if (count >= 5) {
+//     break
+//   }
+// }
+
+// Desenvolva um programa que peça ao usuário para inserir um número inteiro positivo n. Em seguida, calcule a média dos números de 1 até n. Exiba a média no final.
+
+// let numero = parseInt(prompt('Digite um numero inteiro:'));
+// let soma = 0;
+
+// for (let i =1; i<= numero; i++){
+//   soma +=i
+// }
+// console.log(soma/numero)
+
+// Crie um programa que solicita ao usuário inserir um número inteiro positivo. Em seguida, use um loop for para exibir todos os números pares de 1 até o número inserido e, em seguida, todos os números ímpares de 1 até o número inserido.
+
+// let numero2 = Number(prompt('Escolha um número inteiro positivo: '))
+
+// for (i = 0; i <= numero2; i++) {
+//     if (i % 2 === 0) {
+//         document.write('Numero Par!' + i + '<br>')
+//     } else {
+//         document.write('Numero Impar!' + i + '<br>')
+//     }
+// }
+
+
+// Peça ao usuário para inserir um número inteiro positivo n. Em seguida, calcule e exiba o fatorial desse número. O fatorial de um número n é o produto de todos os inteiros positivos de 1 até n.
+
+// let numero = parseInt(prompt('Digite um numero inteiro:'));
+// let fatorial = 1
+// for (let i = numero; i >= 1; i--) {
+//   fatorial *= i
+// }
+// console.log(`O fatorial de ${numero} é ${fatorial}`)
+
+
+console.log(Number.isInteger(5.6))
+console.log(Number.isInteger(7))
