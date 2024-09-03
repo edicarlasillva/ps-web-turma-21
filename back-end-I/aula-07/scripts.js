@@ -182,38 +182,80 @@
 
 // console.log(livro === livro2) // false
 
-const carros = []
+// const carros = []
 
-const carro1 = {
-  marca: 'Toyota',
-  modelo: 'Corolla',
-  ano: 2023,
-  cor: 'Preto'
-}
+// const carro1 = {
+//   marca: 'Toyota',
+//   modelo: 'Corolla',
+//   ano: 2023,
+//   cor: 'Preto'
+// }
 
-const carro2 = {
-  marca: 'Honda',
-  modelo: 'Civic',
-  ano: 2021,
-  cor: 'Prata'
-}
+// const carro2 = {
+//   marca: 'Honda',
+//   modelo: 'Civic',
+//   ano: 2021,
+//   cor: 'Prata'
+// }
 
-const carro3 = {
-  marca: 'Ford',
-  modelo: 'Fiesta',
-  ano: 2020,
-  cor: 'Branco'
-}
+// const carro3 = {
+//   marca: 'Ford',
+//   modelo: 'Fiesta',
+//   ano: 2020,
+//   cor: 'Branco'
+// }
 
-carros.push(carro1, carro2, carro3)
+// carros.push(carro1, carro2, carro3)
 
-console.log(carros)
+// console.log(carros)
 
-// Marca: Toyota, Modelo: Fiesta, Ano: 2020, Cor: Branco
-for (let i = 0; i < carros.length; i++) {
-  console.log(`Marca: ${carros[i].marca}, Modelo: ${carros[i].modelo}, Ano: ${carros[i].ano}, Cor: ${carros[i].cor}`)
-}
+// // Marca: Toyota, Modelo: Fiesta, Ano: 2020, Cor: Branco
+// for (let i = 0; i < carros.length; i++) {
+//   console.log(`Marca: ${carros[i].marca}, Modelo: ${carros[i].modelo}, Ano: ${carros[i].ano}, Cor: ${carros[i].cor}`)
+// }
 
-for (const carro of carros) {
-  console.log(`Marca: ${carro.marca}, Modelo: ${carro.modelo}, Ano: ${carro.ano}, Cor: ${carro.cor}`)
-}
+// for (const carro of carros) {
+//   console.log(`Marca: ${carro.marca}, Modelo: ${carro.modelo}, Ano: ${carro.ano}, Cor: ${carro.cor}`)
+// }
+
+// const pessoas = []
+// const quantidaDePessoas = Number(prompt('Quantas pessoas deseja cadastrar?'))
+
+// for (let i = 0; i < quantidaDePessoas; i++) {
+//   const nome = prompt('Digite o nome da pessoa')
+//   const idade = prompt('Digite idade da pessoa')
+//   const cidade = prompt('Digite cidade da pessoa')
+
+//   pessoas.push({
+//     nome,
+//     idade,
+//     cidade
+//   }) 
+// }
+
+// console.log(pessoas)
+
+// continuar = confirm('Deseja continuar cadastrando?')
+
+// console.log(continuar)
+
+// const pessoas = []
+
+// let continuar = true
+
+// while (continuar) {
+//   const nome = prompt('Digite o nome da pessoa')
+//   const idade = prompt('Digite idade da pessoa')
+//   const cidade = prompt('Digite cidade da pessoa')
+
+//   pessoas.push({
+//     nome,
+//     idade,
+//     cidade
+//   })
+
+//   continuar = confirm('Deseja cadastrar outra pessoa?')
+// }
+
+// console.log(pessoas)
+
