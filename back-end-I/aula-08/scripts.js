@@ -161,15 +161,83 @@
 
 // console.log(numerosDobrados)
 
-const pessoas = [
-  { nome: "João", sexo: "M", salario: 2500 },
-  { nome: "Maria", sexo: "F", salario: 3200 },
-  { nome: "Pedro", sexo: "M", salario: 2000 },
-  { nome: "Ana", sexo: "F", salario: 2800 },
-  { nome: "Carlos", sexo: "M", salario: 3500 }
-];
+// const pessoas = [
+//   { nome: "João", sexo: "M", salario: 2500 },
+//   { nome: "Maria", sexo: "F", salario: 3200 },
+//   { nome: "Pedro", sexo: "M", salario: 2000 },
+//   { nome: "Ana", sexo: "F", salario: 2800 },
+//   { nome: "Carlos", sexo: "M", salario: 3500 }
+// ];
 
-// Usar forEach para exibir os nomes:
-// Usar findIndex para encontrar índice do primeiro homem:
-// Usar o find para encontrar a primeira mulher
-// Usar o filter para encontrar pessoas com salário maior que 2500
+// // Usar forEach para exibir os nomes
+// pessoas.forEach(function(pessoa) {
+//   console.log(pessoa.nome)
+// })
+// // Usar findIndex para encontrar índice do primeiro homem
+// // Se não encontrar nenhum elemento retorna -1
+// const indicePrimeiroHomem = pessoas.findIndex(function(pessoa) {
+//   return pessoa.sexo === 'M'
+// })
+
+// console.log(indicePrimeiroHomem)
+// // Usar o find para encontrar a primeira mulher
+// const primeiraMulher = pessoas.find(function(pessoa) {
+//   return pessoa.sexo === 'F'
+// })
+
+// console.log(primeiraMulher)
+// // Usar o filter para encontrar pessoas com salário maior que 2500
+// const maioresSalarios = pessoas.filter(function(pessoa) {
+//   return pessoa.salario > 2500
+// })
+
+// console.log(maioresSalarios)
+
+let biblioteca = []
+
+function criarLivro(titulo, autor, numPaginas, lido) {
+  return {
+    titulo,
+    autor,
+    numPaginas,
+    lido
+  }
+}
+
+// Cria os livros
+const livro1 = criarLivro('Roube como um artista', 'Austin Kleon', 200, false)
+const livro2 = criarLivro('Mostre seu trabalho', 'Austin Kleon', 190, true)
+
+// Adiciona os livros na biblioteca
+biblioteca.push(livro1)
+biblioteca.push(livro2)
+
+
+function exibirBiblioteca(biblioteca) {
+  biblioteca.forEach(function(livro) {
+    console.log(livro)
+  });
+}
+
+exibirBiblioteca(biblioteca)
+
+function criarNovaBiblioteca(biblioteca, titulo) {
+  return biblioteca.filter(function(livro) {
+    return livro.titulo !== titulo
+  })
+}
+
+biblioteca = criarNovaBiblioteca(biblioteca, 'Mostre seu trabalho')
+console.log(biblioteca)
+
+function marcarComoLido(biblioteca, titulo) {
+  biblioteca.forEach(function(livro) {
+    if (livro.titulo === titulo) {
+      livro.lido = true
+    }
+  })
+}
+
+marcarComoLido(biblioteca, 'Roube como um artista')
+
+console.log(biblioteca)
