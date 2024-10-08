@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f3f3;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+#presenca-container {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+#contador {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.aguardando {
+  color: red;
+}
+
+.pode-comecar {
+  color: green;
+}
