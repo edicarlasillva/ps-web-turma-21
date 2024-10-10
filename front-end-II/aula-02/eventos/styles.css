@@ -1,0 +1,14 @@
+/* button {
+  cursor: pointer;
+  padding: 10px 20px;
+} */
+
+.element {
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.highlighted {
+  background-color: #f0f0f0;
+}
