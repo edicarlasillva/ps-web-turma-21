@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body,
+input,
+button,
+textarea {
+  font-family: DM Sans;
+}
+
+a {
+  text-decoration: none;
+  color: #087f5b;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -0.5px;
+}
+
+.container {
+  width: 30rem;
+}
+
+.header {
+  width: 100%;
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.header .logo {
+  margin-bottom: 4rem;
+}
+
+.header .title {
+  color: #212529;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 1rem;
+}
+
+.header .subtitle {
+  color: #495057;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.5px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  color: #495057;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.form-control input,
+.form-control textarea {
+  padding: 0px 12px;
+  border-radius: 16px;
+  border: 1px solid #adb5bd;
+  background: #fff;
+  width: 100%;
+}
+
+.form-control input {
+  height: 3rem;
+}
+
+.form-control textarea {
+  padding-top: 12px;
+  height: 10rem;
+}
+
+.form-control i {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+/* Error and Success */
+.form-control.success input,
+.form-control.success textarea {
+  border-color: #2ecc71;
+}
+
+.form-control.error input,
+.form-control.error textarea {
+  border-color: #e74c3c;
+}
+
+.form-control.success i.fa-circle-check {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-circle-exclamation {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #e74c3c;
+}
+
+.btn-submit {
+  height: 3.5rem;
+  width: 100%;
+  padding: 0px 1.5rem;
+  border-radius: 16px;
+  background: #087f5b;
+  margin-top: 1.5rem;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+
+  transition: ease 0.2s;
+}
+
+.btn-submit:hover {
+  background: #0a936a;
+}
+
+/* Estilos dos cards de recado */
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: #212529;
+  margin: 0;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #495057;
+  margin-top: 10px;
+}
+
+.card-icons {
+  margin-top: 20px;
+}
+
+.card-icons i {
+  font-size: 1rem;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.card-icons .bi-pencil {
+  color: #087f5b;
+}
+
+.card-icons .bi-trash {
+  color: #a50000;
+}
+
+.card-icons i:hover {
+  opacity: 0.7;
+}
+
+/* Estilo para a div de paginação */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 3rem;
+}
+
+/* Estilo para os botões de página */
+.pagination button {
+  background-color: #087f5b;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Estilo para o botão de página ativa */
+.pagination button.active {
+  background-color: #0a936a;
+}
+
+.pagination button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+  opacity: 0.6;
+}

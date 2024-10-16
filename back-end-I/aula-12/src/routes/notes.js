@@ -100,5 +100,19 @@ router.delete('/:id', (request, response) => {
     })
 })
 
+router.get('/details/:id', (request, response) => {
+  const { id } = request.params
+
+  const note = notes.find(note => note.id === id)
+
+  if (!note) {
+    return response.status(404).json({
+      message: 'Recado não encontrado.'
+    })
+  }
+
+  response.status(200).json(note)
+})
+
 export default router
 
