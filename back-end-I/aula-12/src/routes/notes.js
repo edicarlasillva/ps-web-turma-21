@@ -7,26 +7,64 @@ const router = express.Router()
 
 const notes = []
 
-router.get('/:userId', (request, response) => {
-  // entrada de dados
-  const { userId } = request.params 
+// router.get('/:userId', (request, response) => {
+//   // entrada de dados
+//   const { userId } = request.params 
 
-  // processamento
+//   // processamento
+//   const user = users.find(user => user.id === userId)
+
+//   if (!user) {
+//     // saída
+//     return response.status(404).json({
+//       message: 'Usuário não encontrado.'
+//     })
+//   }
+
+//   const userNotes = notes.filter(note => note.userId === userId)
+
+//   // saída
+//   return response.status(200).json({
+//     message: `Notas de ${user.name} filtradas com sucesso.`,
+//     notes: userNotes
+//   })
+// })
+
+router.get('/:userId', (request, response) => {
+  const { userId } = request.params
+
+  // http://localhost:3000/notes/hdhdhdhdhd?page=2&perPage=15
+  const { page, perPage } = request.query
+
   const user = users.find(user => user.id === userId)
 
   if (!user) {
-    // saída
     return response.status(404).json({
       message: 'Usuário não encontrado.'
     })
   }
 
+  const currentPage = parseInt(page) || 1 // valor padrão 1
+  const itemsPerPage = parseInt(perPage) || 10 // valor padrão 10
+
   const userNotes = notes.filter(note => note.userId === userId)
 
-  // saída
-  return response.status(200).json({
-    message: `Notas de ${user.name} filtradas com sucesso.`,
-    notes: userNotes
+  const totalItems = userNotes.length
+
+  // currenPage = 2
+  // itemsPerPage = 10
+  // startIndex = (2 - 1) * 10 = 10
+  const startIndex = (currentPage - 1) * itemsPerPage
+  const endIndex = startIndex + itemsPerPage
+
+  const paginatedNotes = userNotes.slice(startIndex, endIndex)
+
+  const totalPages = Math.ceil(totalItems / itemsPerPage)
+
+  response.status(200).json({
+    notes: paginatedNotes,
+    totalPages,
+    currentPage
   })
 })
 

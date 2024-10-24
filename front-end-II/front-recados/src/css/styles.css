@@ -113,12 +113,12 @@ a {
   border-color: #e74c3c;
 }
 
-.form-control.success i.fa-circle-check {
+.form-control.success i.bi-check-circle {
   color: #2ecc71;
   visibility: visible;
 }
 
-.form-control.error i.fa-circle-exclamation {
+.form-control.error i.bi-exclamation-circle {
   color: #e74c3c;
   visibility: visible;
 }

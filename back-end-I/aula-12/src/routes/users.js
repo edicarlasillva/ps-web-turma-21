@@ -37,6 +37,31 @@ router.post('/signup', validateUserRegistration, async (request, response) => {
   })
 })
 
+router.post('/login', async (request, response) => {
+  const { email, password } = request.body
+
+  const user = users.find(user => user.email === email)
+
+  if (!user) {
+    return response.status(404).json({
+      message: 'Usuário não encontrado.'
+    })
+  }
+
+  const passwordMatch = await bcrypt.compare(password, user.password)
+
+  if (!passwordMatch) {
+    return response.status(400).json({
+      message: "Credenciais inválidas."
+    })
+  }
+
+  response.status(200).json({
+    message: 'Login feito com sucesso!',
+    userId: user.id
+  })
+})
+
 // Exportação default
 export default router
 

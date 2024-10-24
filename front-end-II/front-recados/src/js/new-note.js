@@ -22,7 +22,8 @@ async function createNewNote(note) {
 formNewNote.addEventListener('submit', (event) => {
   event.preventDefault()
 
-  const userId = '0a0b3462-e3f8-4250-9064-ce3879d0236e'
+  // const userId = '0a0b3462-e3f8-4250-9064-ce3879d0236e'
+  const userId = localStorage.getItem('userId')
 
   const newNote = {
     title: title.value,
