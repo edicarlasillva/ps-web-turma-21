@@ -1,0 +1,39 @@
+.container {
+  border: 1px solid #ccc;
+  width: 300px;
+  margin: 0 auto;
+  height: 600px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  margin: 5px;
+  background-color: blueviolet;
+  text-align: center;
+  flex: 1;
+  height: 50px;
+}
+
+.flex-start {
+  align-content: flex-start;
+}
+.flex-end {
+  align-content: flex-end;
+}
+.center {
+  align-content: center;
+}
+
+.space-between {
+  align-content: space-between;
+}
+.space-around {
+  align-content: space-around;
+}
+.space-evenly {
+  align-content: space-evenly;
+}

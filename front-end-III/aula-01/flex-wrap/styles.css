@@ -1,0 +1,29 @@
+.container {
+  border: 1px solid #ccc;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.item {
+  margin: 5px;
+  background-color: blueviolet;
+  text-align: center;
+  flex: 1;
+  height: 50px;
+}
+
+.nowrap {
+  flex-wrap: nowrap;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}

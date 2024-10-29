@@ -1,0 +1,23 @@
+.container {
+  border: 1px solid #ccc;
+  width: 400px;
+  margin: 0 auto;
+  height: 300px;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.item {
+  background-color: blueviolet;
+  text-align: center;
+  flex-grow: 1;
+  height: 50px;
+}
+
+.start {
+  align-self: flex-start;
+}

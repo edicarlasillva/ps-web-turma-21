@@ -1,0 +1,13 @@
+/* Celular */
+p {
+  font-size: 14px;
+  color: blueviolet;
+}
+
+/* Telas maiores */
+@media (min-width: 768px) {
+  p {
+    font-size: 20px;
+    color: red;
+  }
+}

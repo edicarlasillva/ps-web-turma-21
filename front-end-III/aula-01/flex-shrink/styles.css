@@ -1,0 +1,17 @@
+.container {
+  border: 1px solid #ccc;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+.item {
+  background-color: blueviolet;
+  text-align: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+}

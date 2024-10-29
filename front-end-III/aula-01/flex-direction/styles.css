@@ -1,0 +1,33 @@
+.container {
+  border: 1 solid #ccc;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.item {
+  margin: 5px;
+  background-color: blueviolet;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.column-reverse {
+  flex-direction: column-reverse;
+}
