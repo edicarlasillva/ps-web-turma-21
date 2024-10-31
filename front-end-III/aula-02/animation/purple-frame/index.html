@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    .element {
+      width: 150px;
+      height: 150px;
+      background-color: blueviolet;
+
+      animation: purple-frame 5s 2;
+      /* animation-fill-mode: backwards; */
+      animation-play-state: paused;
+    }
+
+    @keyframes purple-frame {
+      0% {
+        background-color: blueviolet;
+      }
+      25% {
+        background-color: green;
+        border-radius: 0 30px;
+      }
+      50% {
+        background-color: lightcoral;
+        border-radius: 15px 30px;
+      }
+      75% {
+        background-color: blue;
+        border-radius: 30px;
+      }
+      100% {
+        background-color: blueviolet;
+      }
+    }
+  </style>
+
+  <div class="element"></div>
+</body>
+</html>

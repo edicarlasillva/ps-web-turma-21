@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    .element {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      animation: cubic-bezier-example 2s 2;
+      animation-timing-function: cubic-bezier(0.65, 0.1, 0.25, 1);
+      /* animation-delay: 5s; */
+      animation-direction: alternate;
+    }
+
+    @keyframes cubic-bezier-example {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(200px);
+      }
+    }
+  </style>
+
+  <div class="element"></div>
+</body>
+</html>

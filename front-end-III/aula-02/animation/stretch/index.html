@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    body, 
+    html {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .element {
+      height: 250px;
+      width: 250px;
+      background-color: red;
+
+      animation: stretch;
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-out;
+      animation-delay: 3s;
+      /* animation-fill-mode: backwards; */
+      animation-play-state: running;
+    }
+
+    @keyframes stretch {
+      0% {
+        transform: scale(.3);
+        background-color: red;
+        border-radius: 100%;
+      }
+      50% {
+        background-color: orange;
+      }
+      100% {
+        transform: scale(1.5);
+        background-color: yellow;
+      }
+    }
+  </style>
+
+  <div class="element"></div>
+</body>
+</html>

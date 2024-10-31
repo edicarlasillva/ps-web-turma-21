@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .element {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      opacity: 0;
+
+      animation: fade-in-and-move 2s infinite;
+    }
+
+    @keyframes fade-in-and-move {
+      0% {
+        opacity: 0;
+        transform: translateX(-100px);
+      }
+      50% {
+        opacity: 0.5;
+        transform: translateX(0);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(100px);
+      }
+    }
+  </style>
+
+  <div class="element"></div>
+</body>
+</html>

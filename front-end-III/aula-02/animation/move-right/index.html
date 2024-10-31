@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .element {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+
+        animation-name: move-right;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes move-right {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(100px);
+        }
+      }
+    </style>
+
+    <div class="element"></div>
+</body>
+</html>
