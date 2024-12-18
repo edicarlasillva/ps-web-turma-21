@@ -1,12 +1,15 @@
 import { randomUUID } from 'crypto'
+
 import { User } from './User'
 import { Comment } from './Comment'
+import { Rating } from './Rating'
 
 import { comments } from '../database/comment'
 import { ProductType } from '../types'
 
 export class Product {
   private readonly _id: string
+  private _ratings: Rating[]
 
   constructor(
     private _name: string,
@@ -14,6 +17,7 @@ export class Product {
     private _type: ProductType
   ) {
     this._id = randomUUID()
+    this._ratings = []
   }
 
   public get id(): string {
@@ -47,6 +51,18 @@ export class Product {
   public addComment(content: string, user: User): void {
     const comment = new Comment(user, this, content)
     comments.push(comment)
+  }
+
+  addRate(rate: number, user: User) {
+    if (rate < 0 || rate > 5) {
+      console.log('Sua avaliação deve ser entre 0 e 5')
+      return
+    }
+
+    const rating = new Rating(rate, user)
+    this._ratings.push(rating)
+
+    console.log(`Avaliação de ${rate} adicionada por ${user.username}`)
   }
 
   public toJson() {

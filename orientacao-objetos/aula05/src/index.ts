@@ -1,5 +1,6 @@
 import { User } from './models/User'
 import { Product } from './models/Product'
+import { DiscountedProduct } from './models/DiscountedProduct'
 
 import { ProductType } from './types'
 
@@ -48,3 +49,11 @@ console.log(product3.show()) // Deve mostrar detalhes da cama e seus comentário
 // Cenário 6: Convertendo objetos para JSON
 console.log('User1 em formato JSON:', user1.toJson())
 console.log('Product1 em formato JSON:', product1.toJson())
+
+// Cenário 7: Adicionando avaliação
+product1.addRate(5, user1)
+product1.addRate(3, user2)
+
+// Cenário 8: Adicionando desconto
+const discountedProduct = new DiscountedProduct('Notebook', 5000, 10)
+console.log(discountedProduct.show())
