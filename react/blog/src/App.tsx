@@ -8,7 +8,7 @@ import GlobalStyles from "./styles/global";
 
 export function App() {
   return (
-    <ThemeProvider theme={themes.light}>
+    <ThemeProvider theme={themes.dark}>
       <GlobalStyles />
       <RouterProvider router={router} />
     </ThemeProvider>
