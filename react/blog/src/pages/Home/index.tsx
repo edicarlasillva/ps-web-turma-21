@@ -1,4 +1,6 @@
+import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
+
 import { Container, FormWrapper } from "./styles";
 
 export function Home() {
@@ -12,6 +14,8 @@ export function Home() {
           <button>Filtrar</button>
         </Container>
       </FormWrapper>
+
+      <Footer />
     </>
   );
 }
