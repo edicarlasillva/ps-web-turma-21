@@ -4,7 +4,7 @@ export const Wrapper = styled.header`
   background-color: ${({theme}) => theme.colors.secondary};
   padding: 30px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 `
 
 export const Container = styled.div`
